@@ -10,13 +10,14 @@
       sizes="32x32"
       href="./images/favicon-32x32.png"
     />
+    <link rel="stylesheet" href="css/main.css" />
 
     <title>Frontend Mentor | Interactive rating component</title>
   </head>
   <body>
     <section class="rating-component">
       <div class="container">
-        <div class="rating-component__icon-box">
+        <div class="rating-component__icon-box margin-bottom--xs">
           <img
             src="images/icon-star.svg"
             alt="Icon of a star"
@@ -24,24 +25,34 @@
           />
         </div>
 
-        <div class="rating-component__text-box">
-          <h1 class="heading-primary">How did we do?</h1>
+        <div class="rating-component__text-box margin-bottom--xs">
+          <h1 class="heading-primary margin-bottom--xxs">How did we do?</h1>
           <p class="rating-component__desc">
             Please let us know how we did with your support request. All
             feedback is appreciated to help us improve our offering!
           </p>
         </div>
 
-        <div class="rating-component__states flex flex-direction__col">
-          <span class="rating-component__number">1</span>
-          <span class="rating-component__number">2</span>
-          <span class="rating-component__number">3</span>
-          <span class="rating-component__number">4</span>
-          <span class="rating-component__number">5</span>
+        <div class="rating-component__states margin-bottom--s">
+          <p class="rating-component__number">
+            <a href="#" class="rating-component__number--link">1</a>
+          </p>
+          <p class="rating-component__number">
+            <a href="#" class="rating-component__number--link">2</a>
+          </p>
+          <p class="rating-component__number">
+            <a href="#" class="rating-component__number--link">3</a>
+          </p>
+          <p class="rating-component__number">
+            <a href="#" class="rating-component__number--link">4</a>
+          </p>
+          <p class="rating-component__number">
+            <a href="#" class="rating-component__number--link">5</a>
+          </p>
         </div>
 
-        <div class="">
-          <a href="#" class="button button--sumbit">submit</a>
+        <div>
+          <a href="#" class="rating-component__button">submit</a>
         </div>
       </div>
     </section>
