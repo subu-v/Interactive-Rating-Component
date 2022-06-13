@@ -1,0 +1,143 @@
+@import url("https://fonts.googleapis.com/css2?family=Overpass:wght@400;700&display=swap");
+.margin-bottom--xxs {
+  margin-bottom: 0.8rem;
+}
+
+.margin-bottom--xs {
+  margin-bottom: 1.6rem;
+}
+
+.margin-bottom--s {
+  margin-bottom: 2.4rem;
+}
+
+*,
+::before,
+::after {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: inherit;
+          box-sizing: inherit;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  background-color: #121417;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font-size: 1.5rem;
+  font-family: "Overpass", sans-serif;
+  font-weight: 400;
+  height: 100vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.container {
+  max-width: 35rem;
+  margin: 0 auto;
+  padding: 2.4rem;
+}
+
+.heading-primary {
+  font-size: 2.4rem;
+  color: white;
+  font-weight: 700;
+}
+
+.rating-component {
+  background-color: #252d37;
+  border-radius: 25px;
+}
+
+.rating-component__icon-box {
+  border-radius: 50%;
+  background-color: #3b424b;
+  display: inline-block;
+  padding: 1.8rem;
+  position: relative;
+}
+
+.rating-component__icon {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  width: 40%;
+}
+
+.rating-component__desc {
+  color: #7c8798;
+  font-size: 1.3rem;
+  line-height: 1.6;
+}
+
+.rating-component__states {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 2.4rem;
+}
+
+.rating-component__number {
+  border-radius: 50%;
+  background-color: #3b424b;
+  padding: 2rem;
+  position: relative;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+}
+
+.rating-component__number--link:link, .rating-component__number--link:visited {
+  color: #959eac;
+  font-size: 1.2rem;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  text-decoration: none;
+}
+
+.rating-component__number:hover {
+  background-color: #7c8798;
+  cursor: pointer;
+}
+
+.rating-component__number:hover .rating-component__number--link:link,
+.rating-component__number:hover .rating-component__number--link:visited {
+  color: white;
+  font-weight: 700;
+}
+
+.rating-component__number:active {
+  background-color: #fb7413;
+}
+
+.rating-component__button:link, .rating-component__button:visited {
+  background-color: #fb7413;
+  border-radius: 20px;
+  color: white;
+  display: block;
+  letter-spacing: 1px;
+  padding: 1rem;
+  text-align: center;
+  text-decoration: none;
+  text-transform: uppercase;
+}
+
+.rating-component__button:hover, .rating-component__button:active {
+  background-color: white;
+  color: #fb7413;
+}
