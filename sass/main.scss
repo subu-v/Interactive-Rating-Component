@@ -1,12 +1,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Overpass:wght@400;700&display=swap");
 
-// Variables
-$color__primary: hsl(25, 97%, 53%);
-$color__white: hsl(0, 0%, 100%);
-$color__grey--light: hsl(217, 12%, 63%);
-$color__grey--medium: hsl(216, 12%, 54%);
-$color__blue--dark: hsl(213, 19%, 18%);
-$color__blue--very-dark: hsl(216, 12%, 8%);
+@import "components/_thank-you-state.scss";
+@import "_variables.scss";
 
 // MIXINS
 @mixin flex {
@@ -31,6 +26,10 @@ $color__blue--very-dark: hsl(216, 12%, 8%);
   margin-bottom: 2.4rem;
 }
 
+.hidden{
+  display: none;
+}
+
 *,
 ::before,
 ::after {
@@ -50,6 +49,7 @@ body {
   font-family: "Overpass", sans-serif;
   font-weight: 400;
   height: 100vh;
+  position:relative;
 
   @include flex;
   @include flex__center--hv;
@@ -141,6 +141,7 @@ body {
     text-align: center;
     text-decoration: none;
     text-transform: uppercase;
+    transition: all 0.3s;
   }
 
   &__button:hover,
@@ -149,3 +150,4 @@ body {
     color: $color__primary;
   }
 }
+
