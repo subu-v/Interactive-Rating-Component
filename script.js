@@ -1,14 +1,16 @@
 const submitButton = document.querySelector(".rating-component__button");
 const ratingComponent = document.querySelector(".rating-component");
 const thankYouComponent = document.querySelector(".thank-you");
+
 const ratings = document.querySelectorAll(".rating-component__number");
 const receivedRating = document.querySelector(".submitted-rating");
-let submittedRating;
 
 for (let i = 0; i < ratings.length; i++) {
+  console.log("outside of the event");
   ratings[i].addEventListener("click", function () {
-    submittedRating = ratings[i].textContent;
-    receivedRating.textContent = submittedRating;
+    console.log("inside of the event");
+
+    receivedRating.textContent = ratings[i].textContent;
   });
 }
 
