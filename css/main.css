@@ -96,8 +96,8 @@ body {
 }
 
 .heading-primary {
-  font-size: 2.4rem;
   color: white;
+  font-size: 2.4rem;
   font-weight: 700;
 }
 
@@ -129,7 +129,7 @@ body {
   line-height: 1.6;
 }
 
-.rating-component__states {
+.rating-component__ranges {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -139,36 +139,35 @@ body {
 .rating-component__number {
   border-radius: 50%;
   background-color: #3b424b;
+  font-size: 1.2rem;
+  color: #959eac;
   padding: 2rem;
   position: relative;
   -webkit-transition: all 0.3s;
   transition: all 0.3s;
 }
 
-.rating-component__number--link:link, .rating-component__number--link:visited {
-  color: #959eac;
-  font-size: 1.2rem;
+.rating-component__number--span {
   position: absolute;
   top: 50%;
   left: 50%;
   -webkit-transform: translate(-50%, -50%);
           transform: translate(-50%, -50%);
-  text-decoration: none;
 }
 
 .rating-component__number:hover {
   background-color: #7c8798;
-  cursor: pointer;
-}
-
-.rating-component__number:hover .rating-component__number--link:link,
-.rating-component__number:hover .rating-component__number--link:visited {
   color: white;
+  cursor: pointer;
   font-weight: 700;
 }
 
 .rating-component__number:active {
   background-color: #fb7413;
+}
+
+.rating-component__button-box {
+  padding: 0 0.2rem;
 }
 
 .rating-component__button:link, .rating-component__button:visited {
