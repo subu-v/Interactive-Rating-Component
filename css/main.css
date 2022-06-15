@@ -182,3 +182,9 @@ body {
   background-color: white;
   color: #fb7413;
 }
+
+@media (max-width: 25em) {
+  .rating-component__ranges {
+    margin-bottom: 3.2rem;
+  }
+}
