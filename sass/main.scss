@@ -15,11 +15,11 @@
 
 //UTILITY CLASSES
 .margin-bottom--xxs {
-  margin-bottom: 0.8rem;
+  margin-bottom: 1.2rem;
 }
 
 .margin-bottom--xs {
-  margin-bottom: 1.6rem;
+  margin-bottom: 1.8rem;
 }
 
 .margin-bottom--s {
@@ -49,7 +49,6 @@ body {
   font-family: "Overpass", sans-serif;
   font-weight: 400;
   height: 100vh;
-  position: relative;
 
   @include flex;
   @include flex__center--hv;
@@ -127,7 +126,7 @@ body {
   }
 
   &__button-box {
-    padding: 0 0.2rem;
+    padding: 0 0.4rem 0 0;
   }
 
   &__button:link,
