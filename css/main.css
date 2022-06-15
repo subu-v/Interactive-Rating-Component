@@ -4,11 +4,6 @@
   border-radius: 25px;
   text-align: center;
   padding: 1.4rem 0;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  -webkit-transform: translate(-50%, -50%);
-          transform: translate(-50%, -50%);
 }
 
 .thank-you__image {
@@ -16,10 +11,10 @@
 }
 
 .thank-you__ratings {
+  background-color: #3b424b;
   border-radius: 25px;
   display: inline-block;
   padding: 0.4rem 1.4rem;
-  background-color: #3b424b;
 }
 
 .thank-you__ratings--text {
@@ -167,7 +162,7 @@ body {
 }
 
 .rating-component__button-box {
-  padding: 0 0.2rem;
+  padding: 0 0.4rem 0 0;
 }
 
 .rating-component__button:link, .rating-component__button:visited {
