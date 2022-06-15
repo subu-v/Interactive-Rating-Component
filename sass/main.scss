@@ -62,8 +62,8 @@ body {
 }
 
 .heading-primary {
-  font-size: 2.4rem;
   color: $color__white;
+  font-size: 2.4rem;
   font-weight: 700;
 }
 
@@ -93,41 +93,41 @@ body {
     line-height: 1.6;
   }
 
-  &__states {
+  &__ranges {
     @include flex;
     gap: 2.4rem;
   }
+
   &__number {
     border-radius: 50%;
     background-color: #3b424b;
+    font-size: 1.2rem;
+    color: $color__grey--light;
     padding: 2rem;
     position: relative;
     transition: all 0.3s;
 
-    &--link:link,
-    &--link:visited {
-      color: $color__grey--light;
-      font-size: 1.2rem;
+    &--span {
       position: absolute;
       top: 50%;
       left: 50%;
       transform: translate(-50%, -50%);
-      text-decoration: none;
     }
 
     &:hover {
       background-color: $color__grey--medium;
+      color: $color__white;
       cursor: pointer;
-      .rating-component__number--link:link,
-      .rating-component__number--link:visited {
-        color: $color__white;
-        font-weight: 700;
-      }
+      font-weight: 700;
     }
 
     &:active {
       background-color: $color__primary;
     }
+  }
+
+  &__button-box {
+    padding: 0 0.2rem;
   }
 
   &__button:link,
